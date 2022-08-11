@@ -8,15 +8,15 @@
             <th>Description</th>
             <th>Priority</th>
         </tr>
-        @foreach(var Bug in Bugs) {
-            <tr>
-                <td>@Bug.Id</td>
-                <td>@Bug.Title</td>
-                <td>@Bug.Description</td>
-                <td>@Bug.Priority</td>
-            </tr>
-        }
     </thead>
+    @foreach(var bug in Bugs) {
+        <tr>
+            <td>@bug.Id</td>
+            <td>@bug.Title</td>
+            <td>@bug.Description</td>
+            <td>@bug.Priority</td>
+        </tr>
+    }
 </table>
 
 @code{
